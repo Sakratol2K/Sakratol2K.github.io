@@ -1,28 +1,585 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Daniel Constantine</title>
-		<link rel="stylesheet" href="css/main.css" type="text/css" >
-	</head>
-	<body>
-		<nav>
-    			<ul>
-        			<li><a href="index.html">Home</a></li>
-	        		<li><a href="aboutme.html">About</a></li>
-        			<li><a href="https://docs.google.com/document/d/1zGHoko8sH0HzxUV3N4xGo2849C1b9er6sOfwiepj81s/edit?usp=sharing" target="_blank">Resume</a></li>
-    			</ul>
-		</nav>
-		<div class="container">
-    			<div class="introduction">
-        			<h1>Hi there, I'm Daniel Constantine!</h1>
-				    <p>I'm here to share my projects. Click <a href="html/projectTraveloc/index.html" target="_blank">here</a> for my first website, Traveloc</p>
-    			</div>
-		</div>
-		<footer>
-    			<ul>
-        			<li><a href="mailto:danielkevinconstantine@gmail.com"><img src="img/email.png"></a></li>
-        			<li><a href="https://github.com/daniel-constantine"><img src="img/GitHub-Mark-32px.png"></a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+    <head>
+        <title>Daniel Constantine</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Quattrocento Sans' rel='stylesheet'>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+        
+        <!-- icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+        
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+        <link rel="manifest" href="img/icon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <style>
+            #head {
+                    background-color:aqua;
+                    background: url(img/head-transparent-85.png) no-repeat center center fixed;
+                    height: 100vh;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                    text-align: center
+            }
+            
+            #head h1{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 6rem;
+                line-height: 1.2;
+                letter-spacing: -.1rem;
+                font-weight: 700; 
+                color: white;
+                font-weight: bolder;
+            }
+            
+            /* when the size is no bigger than 1250px */
+            @media only screen and (max-width: 1250px){
+                #head h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 4rem;
+                line-height: 1.2;
+                letter-spacing: -.1rem;
+                font-weight: 700; 
+                color: white;
+                font-weight: bolder;
+                }/*end of media query for 1250px*/
+            }
+            
+            /*NEED TO WORK ON THS WHEN THE RESIZE HAPPEN HOW DO WE CHANGE THE SIZE */
+            @media only screen and (max-width: 650px){
+                #head h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2rem;
+                line-height: 1.3;
+                letter-spacing: -.1rem;
+                font-weight: 700; 
+                color: white;
+                font-weight: bolder;
+                }
+                
+                /* to make the button in the center */
+                .afterVerticalAlignTypingBTN{
+                    position: absolute;
+                    top: 19%;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 15%;
+                    height: 7%;
+                    margin: auto;
+                    background-color: transparent;
+                    font-family: 'Montserrat', sans-serif;
+                    color: white;
+                    font-size: 0.5em;
+                    font-weight: 800;
+                    border: 2px solid #F58321;
+                    border-radius: 10px;
+                    transition: 0.7s;
+                }
+
+                .afterVerticalAlignTypingBTN:hover{
+                    background: white;
+                    transition: 0.7s;
+                    color: #F58321;
+                    border: 2px solid white;
+                }
+            }
+            
+            /*to make the first text in the vertical center */
+            .verticalAlignHeader{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 80%;
+                height: 30%;
+                margin: auto;
+            }
+            
+            /* to make the type effect in the vertical center */
+            .afterVerticalAlignTyping{
+                position: absolute;
+                top: 18%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 80%;
+                height: 30%;
+                margin: auto;
+            }
+            
+            /* to make the button in the center */
+            .afterVerticalAlignTypingBTN{
+                position: absolute;
+                top: 19%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 15.5%;
+                height: 7%;
+                margin: auto;
+                background-color: transparent;
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+                font-weight: 800;
+                border: 2px solid #F58321;
+                border-radius: 10px;
+                transition: 0.7s;
+            }
+             
+            .afterVerticalAlignTypingBTN:hover{
+                background: white;
+                transition: 0.7s;
+                color: #F58321;
+                border: 2px solid white;
+            }
+            
+            /* to make the last text in the bottom */
+            .lastText{
+                position: absolute;
+                top: 110%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 80%;
+                height: 30%;
+                margin: auto;
+            }
+            
+            .lastText:hover{
+                position: absolute;
+                top: 110%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 80%;
+                height: 30%;
+                margin: auto;
+                text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+                transition: 0.5s;
+            }
+            
+            /* to make the chevron in the bottom */
+            .chevron{
+                position: absolute;
+                top: 118%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 80%;
+                height: 30%;
+                margin: auto;
+                color: white;
+            }
+            
+            #head p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2rem;
+                font-weight: 400;
+                color: white;
+            }
+            
+            /*ALL OF THIS ARE FOR MODAL */
+            #myImg {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            #myImg:hover {opacity: 0.7;}
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            }
+
+            /* Modal Content (image) */
+            .modal-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+
+            /* Caption of Modal Image */
+            #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+
+            /* Add Animation */
+            .modal-content, #caption {    
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+
+            @-webkit-keyframes zoom {
+                from {-webkit-transform:scale(0)} 
+                to {-webkit-transform:scale(1)}
+            }
+
+            @keyframes zoom {
+                from {transform:scale(0)} 
+                to {transform:scale(1)}
+            }
+
+            /* The Close Button */
+            .close {
+                position: absolute;
+                top: 55px;
+                right: 45px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /* 100% Image Width on Smaller Screens */
+            @media only screen and (max-width: 700px){
+                .modal-content {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+            <!--
+            <div class="container float-left">
+                <div class="logo">
+                    <a href="index.html">  <!--
+                        <img src="img/logo-white.png" alt="logo not hover">
+                        <img src="img/logo-black.png" alt="logo while hover" class="logoHover"> -/->
+                        <img src="img/logo.png">
+                    </a>      
+                </div>                        
+            </div> -->
+            <div class="container-fluid navigation">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item"><a href="#aboutID">ABOUT</a></li>
+                    <li class="list-inline-item"><a href="#projectsID">PROJECTS</a></li>
+                    <li class="list-inline-item"><a href="#resumeID">RESUME</a></li>
+                    <li class="list-inline-item"><a href="#contactID">CONTACT</a></li>
+                </ul>
+            </div>
+            
+            <div class="container-fluid" id="head">
+                <img src="img/logo-small.png" alt="Daniel Constantine Website" title="Daniel Constantine">
+                <h1 class="verticalAlignHeader">Hello, I'm Daniel. I design &amp; build</h1>
+                <h1 class="typewrite afterVerticalAlignTyping" data-period="2000" data-type='["websites", "projects", "software", "user interface"]'></h1>
+                <a href="#contactID"><button class="btn afterVerticalAlignTypingBTN">LET'S WORK TOGETHER</button></a>
+                <a href="#aboutID"><p class="lastText">learn more about what I do</p>
+                <span class="glyphicon glyphicon-chevron-down chevron"></span></a>
+            </div>
+            
+            <div class="space">.</div>
+            <div class="space">.</div>
+            
+            <!-- START OF ABOUT DIV -->
+            
+            <div class="container" id="projectsID">
+                <div class="container project">
+                    <h2 class="text-center"><strong>PROJECTS</strong></h2>
+                    
+                    <div class="space">.</div>
+                    <div class="space">.</div>
+                    
+                    <div class="line"></div>
+                    <div class="space">.</div>
+                    
+                    <h2 class="text-center">TRAVEL<span style="color:aqua ">OC</span></h2>
+                    <div class="smallLine"></div></div>
+                    
+                    <div style="width: 55%; text-align: center; margin: 0 auto; margin-top: 2em;">
+                        <p style="text-align: center; font-size: 1.3em">Traveloc is a travelling agency company that dedicated to offer affordable prices for their costumers</p>
+                    </div>
+                    
+                    <div class="space">.</div>
+                
+                    <div class="text-center btn-group-lg">
+                        <a href="https://traveloc.github.io/aboutUs.html" target="_blank"><button type="button" class="btn">LEARN MORE</button></a> 
+                        <a href="https://traveloc.github.io/index.html" target="_blank"><button type="button" class="btn btn-primary">SEE IT ONLINE</button></a>  
+                    <img style="text-align: center" src="img/mockup.png" width="100%">
+                </div>
+            </div>
+            
+            <!-- START OF PROJECT DIV -->
+            <div class="jumbotron jumbotron-fluid" id="aboutID">
+                <h2 class="text-center" style="margin-bottom: 0.5em; margin-top: 1.2em"><strong>ABOUT</strong></h2>
+                <div class="row">
+                    <div class="col-sm-3" style="background-color: transparent">
+                        <img src="img/danielconstantine250x250.png" style="text-align: center">
+                    </div>
+                    <div class="col-sm-8" style="background-color: transparent;">
+                        <p style="font-size: 1.4em; text-align: justify; margin-top: 1.5em">Daniel Kevin Constantine is an Indonesian who loves programming, reading, and playing video games. He fell in love with New York City when he came in 2015. He is a computer science student at Queens College. Currently, he is a junior and aspired to become a full-stack developer. And just like many other milennials, he enjoys reading and watching some high quality memes in his free time. His aspiration is to work in a health-care based company that focused on improving a person well-beings.</p>
+                    
+                    </div>
+                </div>
+                <div class="space">.</div>
+                <div class="space">.</div>
+            </div> <!-- END OF PROJECT DIV -->
+            
+            <!-- START OF RESUME DIV -->
+            <div class="container-fluid">
+                <div class="container resume">
+                    <h2 id="resumeID" style="text-align: center"><strong>RESUME</strong></h2>
+                    <!-- resume img -->
+                    <p class="text-center"><img id="myImg" src="img/resume.png" alt="Daniel Constantine Resume" width="40%" height="100%"></p>
+                    
+                    <!-- Modal -->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    
+                    <div class="space">.</div>
+                </div>
+            </div> <!-- END OF RESUME DIV -->
+            <div class="space">.</div>
+            
+            <!-- START OF CONTACT DIV -->
+            <div class="container-fluid contact">
+                <h2 id="contactID" style="text-align: center;"><strong>CONTACT</strong></h2>
+                <div class="space">.</div>
+                <div class="container">
+                    <form class="form-horizontal" action="mailto:daniel.k.constantine@gmail.com">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="name" style="color: black">Name:</label>
+                        <div class="col-sm-10">          
+                            <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email" style="color: black">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment" style="color: black">Message:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="comment">   </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">        
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="space">.</div>
+            </div> <!-- END OF CONTACT DIV -->
+
+            <!-- START OF FOOTER -->
+            <div class="container-fluid footer">
+                <div class="row">
+                    <div class="col-sm-3 text-center">
+                        <p style="text-align: left; margin-top: 0.7em; color: white">&copy; 2018 Daniel Constantine</p>
+                    </div>
+                    <div class="col-sm-9" style="color: white; font-size: 1.2em; text-align: right; padding-right: 2em; margin-top: 0.6em" >
+                        <a class="icon-social-github" href="https://github.com/daniel-constantine" target="_blank"> </a>
+                        <a class="icon-social-linkedin" href="https://www.linkedin.com/in/danielconstantine/" target="_blank"> </a>
+                        <a class="icon-social-twitter" href="https://twitter.com/danielkevin_" target="_blank"> </a>
+                        <a class="icon-social-facebook" href="https://www.facebook.com/danielkevinconstantine" target="_blank"> </a>
+                        <a class="icon-social-instagram" href="https://www.instagram.com/danielconstantine_/" target="_blank"> </a>
+                        <a class="icon-social-youtube" href="https://www.youtube.com/channel/UCVfXSGvivh0e9DdEriEPo5w?view_as=subscriber" target="_blank"> </a>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF FOOTER -->
+        </div>
+        
+        <!-- Modal Pop Up Resume -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        </script>
+        
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript">
+            /* SCROLLING EFFECT */
+                (function($) {          
+                    $(document).ready(function(){                    
+                        $(window).scroll(function(){                          
+                            if ($(this).scrollTop() > 250) {
+                                $('.navigation').fadeIn(500);
+                            } else {
+                                $('.navigation').fadeOut(500);
+                            }
+                        });
+                    });
+                })(jQuery);
+        </script>
+        
+        <script type="text/javascript"> //SMOOTH SCROLL
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
+        </script>
+        
+        <script>    
+        /* TYPESCRIPT STARTS */
+            var TxtType = function(el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+            };
+
+            TxtType.prototype.tick = function() {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
+
+                if (this.isDeleting) {
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+
+                this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+                var that = this;
+                var delta = 200 - Math.random() * 100;
+
+                if (this.isDeleting) { delta /= 2; }
+
+                if (!this.isDeleting && this.txt === fullTxt) {
+                    delta = this.period;
+                    this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    this.loopNum++;
+                    delta = 500;
+                }
+
+                setTimeout(function() {
+                that.tick();
+                    }, delta);
+            };
+
+            window.onload = function() {
+                var elements = document.getElementsByClassName('typewrite');
+                for (var i=0; i<elements.length; i++) {
+                    var toRotate = elements[i].getAttribute('data-type');
+                    var period = elements[i].getAttribute('data-period');
+                    if (toRotate) {
+                      new TxtType(elements[i], JSON.parse(toRotate), period);
+                    }
+                }
+                // INJECT CSS
+                var css = document.createElement("style");
+                css.type = "text/css";
+                css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+                document.body.appendChild(css);
+            };        
+        /* TYPESCRIPT ENDS */
+        </script>
+    </body>
 </html>
