@@ -130,6 +130,7 @@ a {
 
 .space{
     visibility: hidden;
+    content: '.';
 }
 
 .line {
