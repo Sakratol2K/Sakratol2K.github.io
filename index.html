@@ -45,14 +45,28 @@
         
         <!-- start of styling the background --> 
         <style>
-            #head {
-                    background: url(img/head-transparent-85.png) no-repeat center center fixed;
-                    height: 100vh;
+            @media screen and (min-width: 496px){
+                #head {
+                        background: url(img/head-transparent-85.png) no-repeat center center fixed;
+                        height: 100vh;
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        background-size: cover;
+                        text-align: center
+                }
+            }
+            
+            @media screen and (min-width: 300px) and (max-width: 495px){
+                #head {
+                    background: url(img/head-transparent-85-small.png) no-repeat center center fixed;
+                    height: 100vh; 
                     -webkit-background-size: cover;
                     -moz-background-size: cover;
                     -o-background-size: cover;
                     background-size: cover;
                     text-align: center
+                }
             }
         </style>
         <!-- end of styling the background --> 
