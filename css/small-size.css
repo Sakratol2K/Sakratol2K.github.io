@@ -6,6 +6,8 @@
         --myWhite: #FFFFFF;
     }
     
+         
+    
     /*
         MARGIN-LEFT AND MARGIN-RIGHT MAKES IT CENTER, IF YOU REMOVE, THERE ARE WHITE SPACE IN EITHER SIDE
         OVERFLOW HIDDEN TO HIDE THE NEEDINESS TO SCROLL RIGHT
@@ -98,7 +100,7 @@
             height: 7%;
             margin: auto;
             background-color: transparent;
-            font-size: .9em;
+            font-size: 4vw;
             color: var(--myWhite);
             font-weight: 800;
             border: 2px solid var(--myOrange);
