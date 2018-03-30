@@ -4,9 +4,17 @@
         <title>Daniel Constantine</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Quattrocento Sans' rel='stylesheet'>
+        
+        <!-- main css and media queries -->
+        <link rel="stylesheet" href="css/small-size.css">
+        <link rel="stylesheet" href="css/small-to-medium.css">
+        <link rel="stylesheet" href="css/medium-size.css">
+        <link rel="stylesheet" href="css/medium-to-large.css">
         <link rel="stylesheet" href="css/main.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
@@ -34,8 +42,9 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        
+        <!-- start of styling the background --> 
         <style>
-            
             #head {
                     background: url(img/head-transparent-85.png) no-repeat center center fixed;
                     height: 100vh;
@@ -45,624 +54,114 @@
                     background-size: cover;
                     text-align: center
             }
-            
-            #head h1{
-                font-family: 'Montserrat', sans-serif;
-                font-size: 6.5rem;
-                line-height: 1.5em;
-                letter-spacing: -.2vw;
-                font-weight: 700; 
-                color: white;
-            }
-            
-            /*to make the first text in the vertical center */
-            .verticalAlignHeader{
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                width: 100%;
-                height: 33%;
-                margin: auto;
-            }
-            
-            /* to make the type effect in the vertical center */
-            .afterVerticalAlignTyping{
-                position: absolute;
-                top: 20%;
-                bottom: 0;
-                left: 0;
-                right: ;
-                width: 100%;
-                height: 33%;
-                margin: auto;
-            }
-            
-            
-            /* to make the button in the center */
-            .afterVerticalAlignTypingBTN{
-                position: absolute;
-                top: 20%;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                width: 15.5%;
-                height: 7%;
-                margin: auto;
-                background-color: transparent;
-                background-color: darkgreen;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 1vw;
-                color: white;
-                font-weight: 800;
-                border: 2px solid #F58321;
-                border-radius: 10px;
-                transition: 0.7s;
-            }
-             
-            .afterVerticalAlignTypingBTN:hover{
-                background: white;
-                transition: 0.7s;
-                color: #F58321;
-                border: 2px solid white;
-            }
-            
-            /* to make the last text in the bottom */
-            .lastText{
-                position: absolute;
-                top: 110%;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                width: 80%;
-                height: 30%;
-                margin: auto;
-                background-color:burlywood; 
-            }
-            
-            .lastText:hover{
-                position: absolute;
-                top: 110%;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                width: 80%;
-                height: 30%;
-                margin: auto;
-                text-shadow: 0 0 10px rgba(255, 255, 255, 1);
-                transition: 0.5s;
-            }
-            
-            
-            #head p{
-                font-family: 'Montserrat', sans-serif;
-                font-size: 1.3vw;
-                font-weight: 400;
-                color: white;
-            }
-            
-            /* to make the chevron in the bottom */
-            .chevron{
-                position: absolute;
-                top: 118%;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                width: 80%;
-                height: 30%;
-                margin: auto;
-                color: white;
-            }
-            
-            .explanation {
-                font-size: 1.5rem;
-                text-align: justify;
-                margin-top: 1.25em;
-                background-color: cornflowerblue;
-            }
-            
-            /* when the size is no bigger than 1350px */
-            @media only screen and (max-width: 1350px){
-                #head h1 {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 5rem;
-                line-height: 1.2;
-                letter-spacing: -.1rem;
-                font-weight: 700; 
-                color: white;
-                font-weight: bolder;
-                background-color: red;
-                }
-                
-                /*to make the first text in the vertical center */
-                .verticalAlignHeader{
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-
-                /* to make the type effect in the vertical center */
-                .afterVerticalAlignTyping{
-                    position: absolute;
-                    top: 19%;
-                    bottom: 0;
-                    left: 0;
-                    right: ;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-                    
-                
-                /* to make the button in the center */
-                .afterVerticalAlignTypingBTN{
-                    position: absolute;
-                    top: 15%;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 20.5%;
-                    height: 7%;
-                    margin: auto;
-                    background-color: transparent;
-                    background-color: cadetblue;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 1em;
-                    color: white;
-                    font-weight: 800;
-                    border: 2px solid #F58321;
-                    border-radius: 10px;
-                    transition: 0.7s;
-                }
-                
-                /* to make the last text in the bottom */
-                .lastText{
-                    position: absolute;
-                    top: 110%;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 80%;
-                    height: 30%;
-                    margin: auto;
-                    background-color: aquamarine;
-                }
-                
-                #head p{
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 1.3em;
-                    font-weight: 400;
-                    color: white;
-                }   
-                
-                .explanation {
-                    font-size: 1em;
-                    text-align: justify;
-                    margin-top: 1.5em
-                }
-            }/*end of media query for 1250px*/
-            
-            /* when the size is no bigger than 1250px */
-            @media only screen and (max-width: 960px){
-                #head h1 {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 3.5rem;
-                line-height: 1.5em;
-                letter-spacing: -.1rem;
-                font-weight: 700; 
-                color: white;
-                font-weight: bolder;
-                background-color: orange;
-                }
-                
-                /*to make the first text in the vertical center */
-                .verticalAlignHeader{
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-
-                /* to make the type effect in the vertical center */
-                .afterVerticalAlignTyping{
-                    position: absolute;
-                    top: 15%;
-                    bottom: 0;
-                    left: 0;
-                    right: ;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-                
-                /* to make the button in the center */
-                .afterVerticalAlignTypingBTN{
-                    position: absolute;
-                    top: 8%;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 30.5%;
-                    height: 7%;
-                    margin: auto;
-                    background-color: transparent;
-                   background-color: lightcoral;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 1em;
-                    color: white;
-                    font-weight: 800;
-                    border: 2px solid #F58321;
-                    border-radius: 10px;
-                    transition: 0.7s;
-                }
-                
-                
-                #head p{
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 1.3em;
-                    font-weight: 400;
-                    color: white;
-                } 
-                /*end of media query for 1250px*/
-            }
-            
-            /*NEED TO WORK ON THS WHEN THE RESIZE HAPPEN HOW DO WE CHANGE THE SIZE */
-            @media only screen and (max-width: 620px){
-                #head h1 {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 2.4rem;
-                line-height: 1.3;
-                letter-spacing: -.1rem;
-                font-weight: 700; 
-                color: white;
-                font-weight: bolder;
-               background-color: blue;
-                }
-                
-                /*to make the first text in the vertical center */
-                .verticalAlignHeader{
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-
-                /* to make the type effect in the vertical center */
-                .afterVerticalAlignTyping{
-                    position: absolute;
-                    top: 10%;
-                    bottom: 0;
-                    left: 0;
-                    right: ;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-                
-                /* to make the button in the center */
-                .afterVerticalAlignTypingBTN{
-                    position: absolute;
-                    top: -5%;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 45.5%;
-                    height: 7%;
-                    margin: auto;
-                    background-color: transparent;
-                    background-color: lawngreen;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 1em;
-                    color: white;
-                    font-weight: 800;
-                    border: 2px solid #F58321;
-                    border-radius: 10px;
-                    transition: 0.7s;
-                }
-            }
-            
-            @media only screen and (max-width: 460px){
-                #head h1 {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 2rem;
-                line-height: 1.3;
-                letter-spacing: -.1rem;
-                font-weight: 700; 
-                color: white;
-                font-weight: bolder;
-                background-color: green;
-                }
-                
-                 /*to make the first text in the vertical center */
-                .verticalAlignHeader{
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-
-                /* to make the type effect in the vertical center */
-                .afterVerticalAlignTyping{
-                    position: absolute;
-                    top: 9%;
-                    bottom: 0;
-                    left: 0;
-                    right: ;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-            }
-            
-            @media only screen and (max-width: 335px){
-                #head h1 {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 1.5rem;
-                line-height: 1.3;
-                letter-spacing: -.1rem;
-                font-weight: 700; 
-                color: white;
-                font-weight: bolder;
-                background-color: purple;
-                }
-                
-                 /*to make the first text in the vertical center */
-                .verticalAlignHeader{
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-
-                /* to make the type effect in the vertical center */
-                .afterVerticalAlignTyping{
-                    position: absolute;
-                    top: 7%;
-                    bottom: 0;
-                    left: 0;
-                    right: ;
-                    width: 100%;
-                    height: 33%;
-                    margin: auto;
-                }
-                
-                /* to make the button in the center */
-                .afterVerticalAlignTypingBTN{
-                    position: absolute;
-                    top: -10%;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 60.5%;
-                    height: 7%;
-                    margin: auto;
-                    background-color: transparent;
-                    background-color: lawngreen;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: .7em;
-                    color: white;
-                    font-weight: 800;
-                    border: 2px solid #F58321;
-                    border-radius: 10px;
-                    transition: 0.7s;
-                }
-                
-                #head p{
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 1em;
-                    font-weight: 400;
-                    color: white;
-                } 
-                
-                /* to make the chevron in the bottom */
-                .chevron{
-                    position: absolute;
-                    top: 117%;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 0%;
-                    height: 30%;
-                    margin: auto;
-                    color: white;
-                }
-            }
-            
-           
-            
-            /*ALL OF THIS ARE FOR MODAL */
-            #myImg {
-                border-radius: 5px;
-                cursor: pointer;
-                transition: 0.3s;
-            }
-
-            #myImg:hover {opacity: 0.7;}
-
-            /* The Modal (background) */
-            .modal {
-                display: none; /* Hidden by default */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                padding-top: 100px; /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-            }
-
-            /* Modal Content (image) */
-            .modal-content {
-                margin: auto;
-                display: block;
-                width: 80%;
-                max-width: 700px;
-            }
-
-            /* Caption of Modal Image */
-            #caption {
-                margin: auto;
-                display: block;
-                width: 80%;
-                max-width: 700px;
-                text-align: center;
-                color: #ccc;
-                padding: 10px 0;
-                height: 150px;
-            }
-
-            /* Add Animation */
-            .modal-content, #caption {    
-                -webkit-animation-name: zoom;
-                -webkit-animation-duration: 0.6s;
-                animation-name: zoom;
-                animation-duration: 0.6s;
-            }
-
-            @-webkit-keyframes zoom {
-                from {-webkit-transform:scale(0)} 
-                to {-webkit-transform:scale(1)}
-            }
-
-            @keyframes zoom {
-                from {transform:scale(0)} 
-                to {transform:scale(1)}
-            }
-
-            /* The Close Button */
-            .close {
-                position: absolute;
-                top: 55px;
-                right: 45px;
-                color: #f1f1f1;
-                font-size: 5vw;
-                font-weight: bold;
-                transition: 0.3s;
-            }
-
-            .close:hover, .close:focus {
-                color: #bbb;
-                text-decoration: none;
-                cursor: pointer;
-            }
         </style>
+        <!-- end of styling the background --> 
+        
     </head>
     
     <body>
         <div class="container-fluid">
-            <div class="container-fluid navigation">
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item"><a href="#aboutID">ABOUT</a></li>
-                    <li class="list-inline-item"><a href="#projectsID">PROJECTS</a></li>
-                    <li class="list-inline-item"><a href="#resumeID">RESUME</a></li>
-                    <li class="list-inline-item"><a href="#contactID">CONTACT</a></li>
-                </ul>
-            </div>
             
-            <div class="container-fluid" id="head">
-                <img src="img/logo-small.png" alt="Daniel Constantine Website" title="Daniel Constantine">
-                <h1 class="verticalAlignHeader">Hello, I'm Daniel. I design &amp; build</h1>
-                <h1 class="typewrite afterVerticalAlignTyping" data-period="2000" data-type='["websites", "projects", "software", "user interface"]'></h1>
-                <a href="#contactID"><button class="afterVerticalAlignTypingBTN">LET'S WORK TOGETHER</button></a>
-                <a href="#aboutID"><p class="lastText">learn more about what I do</p>
-                <span class="glyphicon glyphicon-chevron-down chevron"></span></a>
-            </div>
-            
-            <div class="space">IGNORE</div>
-            <div class="space">IGNORE</div>
-            
-            <!-- START OF ABOUT DIV -->
-            
-            <div class="container" id="projectsID">
-                <div class="container project">
-                    <h2 class="text-center"><strong>PROJECTS</strong></h2>
-                    
-                    <div class="space">.</div>
-                    <div class="space">.</div>
-                    
-                    <div class="line"></div>
-                    <div class="space">.</div>
-                    
-                    <h2 class="text-center">TRAVEL<span style="color:aqua ">OC</span></h2>
-                    <div class="smallLine"></div></div>
-                    
-                    <div style="width: 55%; text-align: center; margin: 0 auto; margin-top: 2em;">
-                        <p style="text-align: center; font-size: 1.5em">Traveloc is a travelling agency company that dedicated to offer affordable prices for their costumers</p>
-                    </div>
-                    
-                    <div class="space">.</div>
-                
-                    <div class="text-center btn-group-lg">
-                        <a href="https://traveloc.github.io/aboutUs.html" target="_blank"><button type="button" class="btn">LEARN MORE</button></a> 
-                        <a href="https://traveloc.github.io/index.html" target="_blank"><button type="button" class="btn btn-primary">SEE IT ONLINE</button></a>  
-                    <img style="text-align: center" src="img/mockup.png" width="100%">
+            <!-- start of navigation section -->
+                <div class="container-fluid navigation">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="#aboutID">ABOUT</a></li>
+                        <li class="list-inline-item"><a href="#projectsID">PROJECTS</a></li>
+                        <li class="list-inline-item"><a href="#resumeID">RESUME</a></li>
+                        <li class="list-inline-item"><a href="#contactID">CONTACT</a></li>
+                    </ul>
                 </div>
-            </div>
+            <!-- end of navigation section -->
             
-            <!-- START OF PROJECT DIV -->
+            <!-- start of landing page -->
+                <div class="container-fluid" id="head">
+                    <img src="img/logo-small.png" alt="Daniel Constantine Website" title="Daniel Constantine">
+                    <h1 class="verticalAlignHeader"> Hello, I'm Daniel. I design &amp; build</h1>
+                    <h1 class="typewrite afterVerticalAlignTyping" data-period="2000" data-type='["websites", "projects", "software", "user interface"]'></h1>
+                    <a href="#contactID"><button class="afterVerticalAlignTypingBTN"> LET'S WORK TOGETHER</button></a>
+                    <a href="#aboutID"><p class="lastText"> learn more about what I do</p>
+                    <span class="glyphicon glyphicon-chevron-down chevron"></span></a>
+                </div>
+            <!-- end of landing page -->
+            
+            <!-- some white space -->
+                <div class="space"></div>
+            <!-- some white space -->
+            
+            <!-- start ABOUT div -->            
+                <div class="container" id="projectsID">
+                    <div class="container project">
+                        <h2 class="text-center"><strong>PROJECTS</strong></h2>
+
+                        <div class="space"></div><!-- some white space -->
+                        <div class="line"></div><!-- long line -->
+                        <div class="space"></div><!-- some white space -->
+
+                        <h2 class="text-center">TRAVEL<span style="color:aqua">OC</span></h2>
+                        <div class="smallLine"></div>
+
+                        <div class="explanationProject" >
+                            <p>Traveloc is a travelling agency company that dedicated to offer affordable prices for their costumers</p>
+                        </div>
+
+                        <div class="space"></div><!-- some white space -->
+
+                        <div class="text-center btn-group-lg">
+                            <a href="https://traveloc.github.io/aboutUs.html" target="_blank"><button type="button" class="btn">LEARN MORE</button></a> 
+                            <a href="https://traveloc.github.io/index.html" target="_blank"><button type="button" class="btn btn-primary">SEE IT ONLINE</button></a>  
+                            <div class="space"></div><!-- some white space -->
+                            <img style="text-align: center" src="img/mockup.png" width="100%">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            <!-- end ABOUT div -->
+            
+            <!-- start of PROJECT div -->
             <div class="jumbotron jumbotron-fluid" id="aboutID">
-                <h2 class="text-center" style="margin-bottom: 0.5em; margin-top: 1.2em"><strong>ABOUT</strong></h2>
+                <h2 class="text-center"><strong>ABOUT</strong></h2>
                 <div class="row">
-                    <div class="col-sm-3 text-center" style="background-color: transparent">
-                        <img src="img/danielconstantine250x250.png" style="text-align: center">
+                    <div class="col-sm-3 text-center">
+                        <img src="img/danielconstantine250x250.png" class="photo">
                     </div>
-                    <div class="col-sm-8" style="background-color: transparent;">
+                    <div class="col-sm-8">
                         <p class="explanation" >Daniel Kevin Constantine is an Indonesian who loves programming, reading, and playing video games. He fell in love with New York City when he came in 2015. He is a computer science student at Queens College. Currently, he is a junior and aspired to become a full-stack developer. And just like many other milennials, he enjoys reading and watching some high quality memes in his free time. His aspiration is to work in a health-care based company that focused on improving a person well-beings.</p>
-                    
                     </div>
                 </div>
-                <div class="space">.</div>
-                <div class="space">.</div>
-            </div> <!-- END OF PROJECT DIV -->
+                
+                <div class="space"></div><!-- some white space -->
+                <div class="space"></div><!-- some white space -->
+                
+            </div> <!-- end of PROJECT div -->
             
-            <!-- START OF RESUME DIV -->
+            <!-- start of RESUME div -->
             <div class="container-fluid">
                 <div class="container resume">
-                    <h2 id="resumeID" style="text-align: center"><strong>RESUME</strong></h2>
+                    <h2 id="resumeID" class="text-center"><strong>RESUME</strong></h2>
+                    
                     <!-- resume img -->
                     <p class="text-center"><img id="myImg" src="img/resume.png" alt="Daniel Constantine Resume" width="50%" height="100%"></p>
                     
-                    <!-- Modal -->
+                    <!-- modal -->
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="img01">
                         <div id="caption"></div>
                     </div>
                     
-                    <div class="space">.</div>
+                    <div class="space"></div> <!-- some white space -->
                 </div>
-            </div> <!-- END OF RESUME DIV -->
-            <div class="space">.</div>
+            </div> <!-- end of RESUME div -->
             
-            <!-- START OF CONTACT DIV -->
+            <div class="space"></div> <!-- some white space -->
+            
+            <!-- start of CONTACT div -->
             <div class="container-fluid contact">
                 <h2 id="contactID" style="text-align: center;"><strong>CONTACT</strong></h2>
-                <div class="space">.</div>
+                
+                <div class="space"></div> <!-- some white space -->
+                
                 <div class="container">
                     <form class="form-horizontal" action="mailto:daniel.k.constantine@gmail.com">
                     <div class="form-group">
@@ -690,16 +189,17 @@
                     </div>
                     </form>
                 </div>
-                <div class="space">.</div>
-            </div> <!-- END OF CONTACT DIV -->
+                <div class="space"></div><!-- some white space -->
+                
+            </div> <!-- end of CONTACT div -->
 
-            <!-- START OF FOOTER -->
+            <!-- start of FOOTER div -->
             <div class="container-fluid footer">
                 <div class="row">
                     <div class="col-sm-3">
-                        <p style="text-align: left; margin-top: 0.7em; color: white">&copy; 2018 Daniel Constantine</p>
+                        <p>&copy; 2018 Daniel Constantine</p>
                     </div>
-                    <div class="col-sm" style="color: white; font-size: 1.6rem; text-align: right; padding-right: 2em; margin-top: 0.6em" >
+                    <div class="col-sm footerSocMed"  >
                         <a class="icon-social-github" href="https://github.com/daniel-constantine" target="_blank"> </a>
                         <a class="icon-social-linkedin" href="https://www.linkedin.com/in/danielconstantine/" target="_blank"> </a>
                         <a class="icon-social-twitter" href="https://twitter.com/danielkevin_" target="_blank"> </a>
@@ -709,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <!-- END OF FOOTER -->
+            <!-- end of FOOTER div -->
         </div>
         
         <!-- Modal Pop Up Resume -->

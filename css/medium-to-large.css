@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 900px) and (max-width: 1199px) { 
 
     :root{
         --myOrange: #F58321;
@@ -55,7 +55,7 @@
 
     /* THE LANDING PAGE */ 
         #head h1{
-            font-size: 6.5rem;
+            font-size: 5.5vw;
             line-height: 1.5em;
             letter-spacing: -.2vw;
             font-weight: 700; 
@@ -90,15 +90,15 @@
         /* to make the button in the center */
         .afterVerticalAlignTypingBTN{
             position: absolute;
-            top: 20%;
+            top: 22%;
             bottom: 0;
             left: 0;
             right: 0;
-            width: 15.5%;
+            width: 20.5%;
             height: 7%;
             margin: auto;
             background-color: transparent;
-            font-size: 1vw;
+            font-size: .9em;
             color: var(--myWhite);
             font-weight: 800;
             border: 2px solid var(--myOrange);
@@ -120,10 +120,10 @@
             bottom: 0;
             left: 0;
             right: 0;
-            width: 100%;
+            width: 80%;
             height: 30%;
             margin: auto;
-            font-size: 1.6vw;
+            font-size: 1.9vw;
             font-weight: 400;
             color: var(--myWhite);
         }
@@ -134,7 +134,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            width: 100%;
+            width: 80%;
             height: 30%;
             margin: auto;
             text-shadow: 0 0 10px rgba(255, 255, 255, 1);
@@ -148,17 +148,24 @@
             bottom: 0;
             left: 0;
             right: 0;
-            width: 100%;
+            width: 80%;
             height: 30%;
             margin: auto;
             color: var(--myWhite);
         }
 
         /* EXPLANATION OF ABOUT ME SECTION */
+        .photo{
+            margin-top: 1.5em;
+        }
         .explanation {
-            font-size: 1.5rem;
             text-align: justify;
-            margin-top: 1.25em;
+            margin-left: 3em;
+            margin-top: 0.5em
+        }
+    
+        p.explanation {
+            font-size: 1.4em;
         }
 
         /*EXPLANATION OF EACH PROJECT */
@@ -190,7 +197,6 @@
         .footer{
             background-color: var(--myGray);
         }
-    
         .footer p{
             text-align: left;
             margin-top: 0.7em;
@@ -206,11 +212,10 @@
             margin-top: 0.7em;
         }
 
-
     /* SOME WHITE SPACE*/
     .space {
         /*visibility: hidden;*/
-        height: 2em;
+        height: 1em;
     }
 
     /* LONG HORIZONTAL LINE */
