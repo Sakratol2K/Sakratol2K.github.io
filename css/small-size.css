@@ -4,6 +4,8 @@
         --myOrange: #F58321;
         --myGray: #605E5E;
         --myWhite: #FFFFFF;
+        --myBlack: #000000;
+        --myAgua: aqua;
     }
     
          
@@ -246,6 +248,32 @@
         border-width: .1em;
     }
 
+    /*SEE IT ONLINE CSS*/
+    .seeOnline{
+        background-color: var(--myOrange);
+        font-size: 100%;
+    }
+    
+    .seeOnline:hover{
+        background-color: var(--myWhite);
+        transition: 0.8s;
+        border-color: var(--myOrange);
+    }
+    
+    /*LEARN MORE CSS */
+    .learnMore:hover{
+        background-color: var(--myAgua);
+        border-color: transparent;
+    }
+    
+    .learnMore{
+        transition: 0.8s;
+        font-size: 100%;
+        color: black;
+        background-color: transparent;
+        border-color: var(--myBlack)
+    }
+    
     /* MODAL CSS */
         #myImg {
             border-radius: 5px;
